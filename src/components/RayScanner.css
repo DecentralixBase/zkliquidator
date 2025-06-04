@@ -1,0 +1,14 @@
+.ray-rotate {
+  animation: ray-spin 2.5s linear infinite;
+  transform-origin: 50% 50%;
+}
+@keyframes ray-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.ray-glow {
+  pointer-events: none;
+  box-shadow: 0 0 32px 8px #00fff7, 0 0 64px 16px #a259ff;
+  border-radius: 50%;
+  opacity: 0.15;
+} 

@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Orbitron', 'Audiowide', Arial, sans-serif;
+  background: #0b0f1a;
+}
+
+.font-orbitron {
+  font-family: 'Orbitron', Arial, sans-serif;
+}
+.font-audiowide {
+  font-family: 'Audiowide', Arial, sans-serif;
+}
+
+.glass-panel {
+  background: rgba(16, 22, 36, 0.7);
+  backdrop-filter: blur(16px) saturate(180%);
+  border-radius: 1.5rem;
+  border: 1.5px solid rgba(0,255,247,0.15);
+  box-shadow: 0 4px 32px 0 rgba(0,255,247,0.08);
+}
+
+.drop-shadow-glow {
+  filter: drop-shadow(0 0 8px #00fff7) drop-shadow(0 0 16px #a259ff);
+} 

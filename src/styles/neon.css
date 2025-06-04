@@ -1,0 +1,30 @@
+.neon-cyan { color: #00fff7; text-shadow: 0 0 8px #00fff7, 0 0 16px #00fff7; }
+.neon-pink { color: #ff00e0; text-shadow: 0 0 8px #ff00e0, 0 0 16px #ff00e0; }
+.neon-purple { color: #a259ff; text-shadow: 0 0 8px #a259ff, 0 0 16px #a259ff; }
+.neon-yellow { color: #ffe600; text-shadow: 0 0 8px #ffe600, 0 0 16px #ffe600; }
+.neon-blue { color: #00c3ff; text-shadow: 0 0 8px #00c3ff, 0 0 16px #00c3ff; }
+
+.neon-btn {
+  box-shadow: 0 0 8px #00fff7, 0 0 16px #a259ff;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.neon-btn:hover {
+  box-shadow: 0 0 16px #ff00e0, 0 0 32px #00fff7;
+  transform: scale(1.05);
+}
+
+.ray-rotate {
+  animation: ray-spin 2.5s linear infinite;
+  transform-origin: 50% 50%;
+}
+@keyframes ray-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.ray-glow {
+  pointer-events: none;
+  box-shadow: 0 0 32px 8px #00fff7, 0 0 64px 16px #a259ff;
+  border-radius: 50%;
+  opacity: 0.15;
+} 
