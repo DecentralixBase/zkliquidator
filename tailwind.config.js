@@ -1,28 +1,26 @@
 module.exports = {
-  purge: [],
-  darkMode: false, // or 'media' or 'class'
   content: [
-    './index.html',
-    './src/**/*.{js,jsx,ts,tsx}',
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
     extend: {
+      colors: {
+        'background': '#0a0f1b',
+        'neon-cyan': '#00fff7',
+        'neon-blue': '#00c3ff',
+        'neon-purple': '#a259ff',
+        'neon-pink': '#ff00e0',
+        'neon-yellow': '#ffe600'
+      },
       fontFamily: {
         orbitron: ['Orbitron', 'sans-serif'],
-        audiowide: ['Audiowide', 'sans-serif'],
+        audiowide: ['Audiowide', 'sans-serif']
       },
-      colors: {
-        'neon-cyan': '#00fff7',
-        'neon-pink': '#ff00e0',
-        'neon-purple': '#a259ff',
-        'neon-yellow': '#ffe600',
-        'neon-blue': '#00c3ff',
-        'hud-bg': '#0b0f1a',
-      },
-    },
+      boxShadow: {
+        'neon': '0 0 16px 2px #00fff7, 0 0 32px 8px #a259ff'
+      }
+    }
   },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
-}
+  plugins: []
+}; 
